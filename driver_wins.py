@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Main Function
 def main(argv):
 	# Connect to database and setup the connection
-	dbConnection = sqlite3.connect('f1data.sqlite')
+	dbConnection = sqlite3.connect('formula1data.db')
 	dbConnection.row_factory = sqlite3.Row
 
 	# The SQL we want to run
