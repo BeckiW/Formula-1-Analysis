@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Main Function
 def main(argv):
-	dbConnection = sqlite3.connect('f1data.sqlite')
+	dbConnection = sqlite3.connect('formula1data.db')
 	dbConnection.row_factory = sqlite3.Row
 
 	sql = "SELECT * FROM drivers ORDER BY forename"

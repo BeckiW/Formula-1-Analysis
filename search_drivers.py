@@ -10,7 +10,7 @@ def main(argv):
 
 	keyword = argv[1]
 
-	dbConnection = sqlite3.connect('f1data.sqlite')
+	dbConnection = sqlite3.connect('formula1data.db')
 	dbConnection.row_factory = sqlite3.Row
 
 	sql = "SELECT * FROM drivers WHERE (forename LIKE '%%%s%%') OR (surname LIKE '%%%s%%') ORDER BY forename" % (keyword, keyword)
