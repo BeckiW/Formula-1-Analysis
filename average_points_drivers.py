@@ -30,6 +30,7 @@ def main(argv):
     for row in rows:
         print(row["forename"], row["surname"], row["points"])
 
+        
 
 # Call Main Function
 if __name__ == "__main__":
